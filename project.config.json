@@ -4,50 +4,39 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
-    "enhance": false,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
-    "newFeature": false,
+    "newFeature": true,
     "coverView": true,
-    "nodeModules": false,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
-    "uglifyFileName": false,
     "checkInvalidKey": true,
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
-    "compileHotReLoad": false,
-    "useMultiFrameRuntime": true,
-    "useApiHook": true,
-    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
-    "bundle": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
-    "userConfirmedBundleSwitch": false,
-    "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true
+    "compileHotReLoad": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.21.1",
-  "appid": "wx140025ccaa82b8f6",
-  "projectname": "miniprogram-9",
+  "libVersion": "2.11.3",
+  "appid": "wx1307a66029adab01",
+  "projectname": "echarts-miniprogram",
   "debugOptions": {
     "hidedInDevtools": []
   },
-  "scripts": {},
   "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
       "list": []
@@ -56,16 +45,9 @@
       "list": []
     },
     "game": {
+      "currentL": -1,
       "list": []
     },
-    "plugin": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": []
-    }
+    "miniprogram": {}
   }
 }
