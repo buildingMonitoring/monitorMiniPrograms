@@ -1,2 +1,19 @@
-<!--pages/device/device.wxml-->
-<text>pages/device/device.wxml,test</text>
+<page-meta root-font-size="system"/>
+<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
+	<view class="weui-msg">
+		<view class="weui-msg__text-area">
+			<view class="weui-msg__title">设备信息</view>
+			<view class="weui-msg__custom-area">
+				<view class="weui-form-preview__list">
+					<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">自定义名称</label><view class="weui-form-preview__value">彩电</view></view>
+					<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备状态</label><view class="weui-form-preview__value">正常</view></view>
+                    <view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备编码</label><view class="weui-form-preview__value">ss123</view></view>
+                    <view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">MAC地址</label><view class="weui-form-preview__value">192.168.0.0</view></view>
+                    <view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">源地址</label><view class="weui-form-preview__value">192.168.0.0</view></view>
+                    <view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备类型</label><view class="weui-form-preview__value">电器</view></view>
+                    <view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">绑定时间</label><view class="weui-form-preview__value">2021-11-15</view></view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
