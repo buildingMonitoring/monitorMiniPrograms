@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    devideList:{
+      status:"正常",  //设备状态
+  	  code:"sss123",   //设备编码
+  	  name:"冰箱",    //自定义名称
+  	  macAddress:"192.168.0.0",   //设备MAC地址
+  	  sourceAddress:"192.158.0.1",    //源地址
+    	type:"制冷设备",     //设备类型
+  	  time:"2021-11-14",     //绑定事件
+    }
   },
 
   /**
