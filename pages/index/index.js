@@ -18,6 +18,20 @@ Page({
 });
 
 function initChart3(canvas, width, height, dpr) {
+  wx.request({
+    //仅为示例，并非真实的接口地址
+    url: 'https://miniapp.sjw2l3.com/test', 
+    data: {
+      x: '',
+      y: ''
+    },
+    header: {
+      'content-type': 'application/json' // 默认值
+    },
+    success (res) { //需要注意的是，这里也可以是箭头函数，也有必须使用箭头函数的情况
+      console.log(res.data)
+    }
+  })
   // 年份对应数据
   var yearData = [
         // 两个数组是因为有两条线
@@ -93,13 +107,13 @@ function initChart3(canvas, width, height, dpr) {
     series: [{
         type: 'line',
         smooth: true, // 圆滑的线
-        name: '新增粉丝',
+        name: '温度',
         data: yearData[0]
       },
       {
         type: 'line',
         smooth: true, // 圆滑的线
-        name: '新增游客',
+        name: '湿度',
         data: yearData[1]
       }
     ]
@@ -184,13 +198,13 @@ function initChart31(canvas, width, height, dpr) {
     series: [{
         type: 'line',
         smooth: true, // 圆滑的线
-        name: '新增粉丝',
+        name: 'PM2.5',
         data: yearData[0]
       },
       {
         type: 'line',
         smooth: true, // 圆滑的线
-        name: '新增游客',
+        name: 'PM10',
         data: yearData[1]
       }
     ]
