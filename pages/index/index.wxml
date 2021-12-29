@@ -1,6 +1,6 @@
 <view class="header">
 	<image class="head-img" src="/images/head_bg.png"></image>
-	<text>建筑环境监测</text>
+	<text>建筑环境监测{{ec3.onInit.id}}</text>
 </view>
 
 <view class="chart-box">
@@ -8,7 +8,7 @@
 		<image src="/images/line.png"></image>
 		<text>折线图 - 温湿度变化</text>
 		<view class="chart">
-			<ec-canvas id="mychart-dom-bar3" canvas-id="mychart-bar3" ec="{{ ec3 }}"></ec-canvas>
+			<ec-canvas class="canvas" id="mychart-dom-bar3" bind:init="initEacharts3" canvas-id="mychart-bar3" ec="{{ ec3 }}"></ec-canvas>
 		</view>
 		<view class="panel-footer"></view>
 	</view>
@@ -16,7 +16,7 @@
 		<image src="/images/line.png"></image>
 		<text>折线图 - 颗粒物</text>
 		<view class="chart">
-			<ec-canvas id="mychart-dom-bar3" canvas-id="mychart-bar3" ec="{{ ec31 }}"></ec-canvas>
+			<ec-canvas id="mychart-dom-bar3" bind:init="initEacharts31" canvas-id="mychart-bar3" ec="{{ ec31 }}"></ec-canvas>
 		</view>
 		<view class="panel-footer"></view>
 	</view>
@@ -24,32 +24,32 @@
 		<image src="/images/line.png"></image>
 		<text>折线图 - 空气质量</text>
 		<view class="chart">
-			<ec-canvas id="mychart-dom-bar4" canvas-id="mychart-bar4" ec="{{ ec4 }}"></ec-canvas>
+			<ec-canvas id="mychart-dom-bar4" bind:init="initEacharts4" canvas-id="mychart-bar4" ec="{{ ec4 }}"></ec-canvas>
 		</view>
 		<view class="panel-footer"></view>
 	</view>
 
 	<view class="panel">
 		<image src="/images/line.png"></image>
-		<text>饼形图 - 年龄分布</text>
+		<text>温湿度</text>
 		<view class="chart">
-			<ec-canvas id="mychart-dom-bar5" canvas-id="mychart-bar5" ec="{{ ec5 }}"></ec-canvas>
+			<ec-canvas id="mychart-dom-bar5" bind:init="initEacharts5" canvas-id="mychart-bar5" ec="{{ ec5 }}"></ec-canvas>
 		</view>
 		<view class="panel-footer"></view>
 	</view>
 	<view class="panel">
 		<image src="/images/line.png"></image>
-		<text>饼形图 - 年龄分布</text>
+		<text>颗粒物</text>
 		<view class="chart">
-			<ec-canvas id="mychart-dom-bar5" canvas-id="mychart-bar5" ec="{{ ec5 }}"></ec-canvas>
+			<ec-canvas id="mychart-dom-bar51" bind:init="initEacharts51" canvas-id="mychart-bar5" ec="{{ ec51 }}"></ec-canvas>
 		</view>
 		<view class="panel-footer"></view>
 	</view>
 	<view class="panel">
 		<image src="/images/line.png"></image>
-		<text>饼形图 - 年龄分布</text>
+		<text>污染性气体</text>
 		<view class="chart">
-			<ec-canvas id="mychart-dom-bar5" canvas-id="mychart-bar5" ec="{{ ec5 }}"></ec-canvas>
+			<ec-canvas id="mychart-dom-bar52" bind:init="initEacharts52" canvas-id="mychart-bar5" ec="{{ ec52 }}"></ec-canvas>
 		</view>
 		<view class="panel-footer"></view>
 	</view>
