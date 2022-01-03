@@ -27,8 +27,8 @@
 			</view>
 		</view>
 		<view style="display: flex;justify-content: space-between;width: 50%;float: right;">
-			<view>编辑</view>
-			<view>删除</view>
+			<view bindtap="edit" id="{{item.code}}">编辑</view>
+			<view bindtap="del" id="{{item.code}}">删除</view>
 		</view>
 	</view>
 	<text>\n</text>
@@ -64,3 +64,34 @@
 		</view>
 	</view>
 </view>
+<form bindsubmit='sub' wx:if="{{tag}}" class="form">
+	<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">自定义名称</label>
+		<view class="weui-form-preview__value"><input></input></view>
+	</view>
+	<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备状态</label>
+		<view class="weui-form-preview__value"><input></input></view>
+	</view>
+	<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备编码</label>
+		<view class="weui-form-preview__value"><input></input></view>
+	</view>
+	<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">MAC地址</label>
+		<view class="weui-form-preview__value"><input></input></view>
+	</view>
+	<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">源地址</label>
+		<view class="weui-form-preview__value"><input></input></view>
+	</view>
+	<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备类型</label>
+		<view class="weui-form-preview__value"><input></input></view>
+	</view>
+	<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">绑定时间</label>
+		<view class="weui-form-preview__value"><input></input></view>
+	</view>
+	<view style="display: flex;justify-content: space-between;width: 50%;float: right;">
+		<Button type="primary" htmlType="submit">
+		提交
+	</Button>
+	<Button bindtap="quit" type="primary" ghost>
+		取消
+	</Button>
+	</view>
+</form>
