@@ -1,19 +1,66 @@
-<page-meta root-font-size="system"/>
-<view class="page" data-weui-theme="{{theme}}" data-weui-mode="{{mode}}">
-	<view class="weui-msg">
-		<view class="weui-msg__text-area">
-			<view class="weui-msg__title">设备信息</view>
-			<view class="weui-msg__custom-area">
-				<view class="weui-form-preview__list">
-					<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">自定义名称</label><view class="weui-form-preview__value">彩电</view></view>
-					<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备状态</label><view class="weui-form-preview__value">正常</view></view>
-                    <view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备编码</label><view class="weui-form-preview__value">ss123</view></view>
-                    <view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">MAC地址</label><view class="weui-form-preview__value">192.168.0.0</view></view>
-                    <view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">源地址</label><view class="weui-form-preview__value">192.168.0.0</view></view>
-                    <view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备类型</label><view class="weui-form-preview__value">电器</view></view>
-                    <view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">绑定时间</label><view class="weui-form-preview__value">2021-11-15</view></view>
+<view class="weui-msg__title">设备列表</view>
+<view wx:for="{{devideList}}" class="userinfo">
+	<view class='cov'>
+		<view>
+			<view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">自定义名称</label>
+					<view class="weui-form-preview__value">{{item[0].name}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备状态</label>
+					<view class="weui-form-preview__value">{{item[0].status}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备编码</label>
+					<view class="weui-form-preview__value">{{item[0].code}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">MAC地址</label>
+					<view class="weui-form-preview__value">{{item[0].macAddress}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">源地址</label>
+					<view class="weui-form-preview__value">{{item[0].sourceAddress}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备类型</label>
+					<view class="weui-form-preview__value">{{item[0].type}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">绑定时间</label>
+					<view class="weui-form-preview__value">{{item[0].time}}</view>
 				</view>
 			</view>
+		</view>
+		<view style="display: flex;justify-content: space-between;width: 50%;float: right;">
+			<view>编辑</view>
+			<view>删除</view>
+		</view>
+	</view>
+	<text>\n</text>
+	<view class='cov'>
+		<view>
+			<view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">自定义名称</label>
+					<view class="weui-form-preview__value">{{item[1].name}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备状态</label>
+					<view class="weui-form-preview__value">{{item[1].status}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备编码</label>
+					<view class="weui-form-preview__value">{{item[1].code}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">MAC地址</label>
+					<view class="weui-form-preview__value">{{item[1].macAddress}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">源地址</label>
+					<view class="weui-form-preview__value">{{item[1].sourceAddress}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">设备类型</label>
+					<view class="weui-form-preview__value">{{item[1].type}}</view>
+				</view>
+				<view class="weui-form-preview__item" aria-role="option"><label class="weui-form-preview__label">绑定时间</label>
+					<view class="weui-form-preview__value">{{item[1].time}}</view>
+				</view>
+			</view>
+		</view>
+		<view style="display: flex;justify-content: space-between;width: 50%;float: right;">
+			<view>编辑</view>
+			<view>删除</view>
 		</view>
 	</view>
 </view>

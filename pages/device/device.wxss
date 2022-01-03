@@ -1,1 +1,24 @@
 /* pages/device/device.wxss */
+.cov{
+  box-shadow: 5px 5px 5px 5px rgba(194, 184, 184, 0.938);
+  width: 45vw;
+  right: 0px;
+  color: rgb(63, 12, 180);
+}
+
+.userinfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 2%;
+  width: 95%;
+}
+
+.weui-form-preview__item{
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+.weui-msg__title{
+ text-align: center;
+}
